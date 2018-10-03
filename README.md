@@ -9,7 +9,7 @@ Over the next few weeks, we'll work on a large scale project that you'll build f
 
 Schedule:
 
-Week 1 - Plan! Choose to work in a team of up to 3 if you'd like (or work alone). Decide what kind of quiz you'll be building. Submit some basic mock-ups for the UI including what page interactions will look like.
-Week 2 - Build a static UI for questions (no page interactions, just lay out your HTML and CSS).
-Week 3 - Build javascript functions and objects that you think you might need to handle the quiz data.
-Week 4 - Hook it all up and get it working!
+* Week 1 - Plan! Choose to work in a team of up to 3 if you'd like (or work alone). Decide what kind of quiz you'll be building. Submit some basic mock-ups for the UI including what page interactions will look like.
+* Week 2 - Build a static UI for questions (no page interactions, just lay out your HTML and CSS).
+* Week 3 - Build javascript functions and objects that you think you might need to handle the quiz data.
+* Week 4 - Hook it all up and get it working!
