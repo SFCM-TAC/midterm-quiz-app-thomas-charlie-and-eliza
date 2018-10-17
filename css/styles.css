@@ -1,20 +1,22 @@
 
 /* background color classes */
-.red {
-  background-color: red;
+
+#answers {
+  text-align: center;
+  background-color: white;
+  width: 25%;
+  align-content: center;
+  /* overflow-y: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; */
 }
-.blue {
-  background-color: blue;
-}
-.yellow {
-  background-color: yellow;
-}
-.grey {
-  background-color: grey;
-}
+
+
+
 /* box classes */
 .box {
-  height: 150px;
+  height: 30px;
   width: 200px;
   margin: 10px;
 }
