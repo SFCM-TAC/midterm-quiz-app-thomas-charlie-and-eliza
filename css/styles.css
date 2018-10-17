@@ -1,0 +1,65 @@
+
+/* background color classes */
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
+}
+.yellow {
+  background-color: yellow;
+}
+.grey {
+  background-color: grey;
+}
+/* box classes */
+.box {
+  height: 150px;
+  width: 200px;
+  margin: 10px;
+}
+
+.box-selected {
+  border: 3px solid black;
+}
+
+
+/* general layout classes */
+body {
+  font-family: helvetica;
+  font-size: 18px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+.section {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+}
+#boxes {
+  width: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.task {
+  width: 350px;
+  margin-bottom: 20px;
+}
+
+.colors {
+  display: flex;
+  flex-direction: row;
+}
+.color-selector {
+  width: 50px;
+  height: 30px;
+  margin-right: 10px;
+}
+button {
+  margin-top: 10px;
+}
