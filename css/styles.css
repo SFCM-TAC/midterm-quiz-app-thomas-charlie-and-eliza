@@ -67,3 +67,19 @@ body {
   font-size: 25px;
   font-family: ;
 }
+
+#secondanswerscolumn {
+  text-align: center;
+  background-color: lightgreen;
+  width: 20%;
+  align-content: center;
+  overflow-y: auto;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+
+
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; */
+}
