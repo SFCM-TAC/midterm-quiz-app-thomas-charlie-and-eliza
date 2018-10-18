@@ -1,0 +1,123 @@
+div {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  pointer-events: none;
+  position: absolute;
+}
+
+.innerw {
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+  position: absolute;
+  /* border: solid; */
+  z-index: 20;
+  /* transform: translateZ(10px); */
+  pointer-events: none;
+}
+
+.innerw2 {
+  margin-left: 0px;
+  top: 0px;
+  overflow: hidden;
+  position: static;
+  /* border: solid; */
+  /* z-index: 20; */
+  pointer-events: none;
+}
+
+.innerw3 {
+  margin-left: 170px;
+  top: 0px;
+  overflow: hidden;
+  position: static;
+  /* border: solid; */
+  /* z-index: 20; */
+  pointer-events: none;
+}
+
+.inner {
+  margin-left: -85px;
+  margin-top: 130px;
+  background-color: palegreen;
+  z-index: 20;
+  position: static;
+  pointer-events: auto;
+}
+
+.inner:hover {
+  background-color: green;
+}
+
+.mwrap {
+  position: absolute;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 10;
+}
+.mwrap2 {
+  position: static;
+  margin-left: 0px;
+  margin-top: 0px;
+  overflow: hidden;
+  pointer-events: none;
+}
+.mid {
+  position: static;
+  pointer-events: auto;
+}
+#midaw1 {
+  left: 0px;
+  top: 0px;
+}
+#mida {
+  margin-left: 170px;
+  margin-top: 0px;
+}
+#midbw1 {
+  left: 170px;
+  top: 0px;
+}
+#midb {
+  margin-left: -85px;
+  margin-top: 130px;
+}
+#midcw1 {
+  left: 85px;
+  top: 130px;
+}
+#midc {
+  margin-left: -85px;
+  margin-top: -130px;
+}
+.mid {
+  background-color: lightblue;
+  z-index: 15;
+}
+.mid:hover {
+  background-color: blue;
+}
+
+
+#outer1 {
+  left: 0px;
+  top: 0px;
+}
+
+#outer2 {
+  left: 170px;
+  top: 0px;
+}
+#outer3 {
+  left: 85px;
+  top: 130px;
+}
+.outer {
+  background-color: lightcoral;
+  z-index: 1;
+  pointer-events: auto;
+}
+.outer:hover {
+  background-color: red;
+}
