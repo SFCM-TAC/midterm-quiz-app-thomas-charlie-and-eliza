@@ -3,30 +3,44 @@
 
 #answers {
   text-align: center;
-  background-color: white;
-  width: 25%;
+  background-color: lightgreen;
+  width: 20%;
   align-content: center;
-  /* overflow-y: auto;
-  display: flex;
+  overflow-y: auto;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+
+
+  /* display: flex;
   flex-direction: row;
   flex-wrap: wrap; */
 }
 
-
-
-/* box classes */
 .box {
-  height: 30px;
-  width: 200px;
-  margin: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid grey;
+  padding: 5px;
+  margin: auto;
+  margin-top: 20px;
 }
+
+#vennDiagram {
+  background-color: lightblue;
+  width: 80%;
+  height: 80%;
+  align-content: center;
+  overflow-y: auto;
+  /* width: 792px;
+  height: 612px; */
+}
+
 
 .box-selected {
   border: 3px solid black;
 }
 
-
-/* general layout classes */
 body {
   font-family: helvetica;
   font-size: 18px;
@@ -34,34 +48,14 @@ body {
 .container {
   display: flex;
   flex-direction: row;
-  height: 100%;
+  height: auto;
 }
-.section {
+/* .section {
   margin: 10px;
   padding: 10px;
   border: 1px solid black;
-}
-#boxes {
-  width: 100%;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.task {
-  width: 350px;
-  margin-bottom: 20px;
-}
+} */
 
-.colors {
-  display: flex;
-  flex-direction: row;
-}
-.color-selector {
-  width: 50px;
-  height: 30px;
-  margin-right: 10px;
-}
 button {
   margin-top: 10px;
 }
