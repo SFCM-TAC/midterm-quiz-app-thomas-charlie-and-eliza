@@ -3,7 +3,8 @@
 
 #answers {
   text-align: center;
-  background-color: lightgreen;
+  color: white;
+  background-color: #515151;
   width: 20%;
   align-content: center;
   overflow-y: auto;
@@ -24,11 +25,11 @@
   padding: 5px;
   margin: auto;
   margin-top: 10px;
-  background-color: lightblue;
+  background-color: black;
 }
 
 #vennDiagram {
-  background-color: lightblue;
+  background-color: white;
   width: 80%;
   height: 80%;
   align-content: center;
