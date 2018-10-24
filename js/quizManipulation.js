@@ -9,6 +9,7 @@ var midc = null
 var inner = null
 
 function testAnswers(){
+
 if (Boolean(outer1 == 1 || outer1 == 2 || outer1 == 3) === true) {
   givenAnswers[0] = "true";
   } else {
@@ -31,70 +32,52 @@ if (inner == 7) {
   }
 
 if (Boolean((outer1 == 1 && outer2 == 2) || (outer1 == 2 && outer2 == 1)) === true) {
-  if (mida == 4) {
-    givenAnswers[3] = "true";
+    if (mida == 4) {
+      givenAnswers[3] = "true";
+      }
+    } else if (Boolean((outer1 == 1 && outer2 == 3) || (outer1 == 3 && outer2 == 1)) === true) {
+      if (mida == 5) {
+        givenAnswers[3] = "true";
+      }
+    } else if (Boolean((outer1 == 2 && outer2 == 3) || (outer1 == 3 && outer2 == 2)) === true) {
+      if (mida == 6) {
+        givenAnswers[3] = "true";
+      }
+    } else {
+      givenAnswers[3] = "false";
     }
-  } else {
-    givenAnswers[3] = "false";
-  }
-if (Boolean((outer1 == 1 && outer2 == 3) || (outer1 == 3 && outer2 == 1)) === true) {
-  if (mida == 5) {
-    givenAnswers[3] = "true";
-    }
-  } else {
-    givenAnswers[3] = "false";
-  }
-if (Boolean((outer1 == 2 && outer2 == 3) || (outer1 == 3 && outer2 == 2)) === true) {
-  if (mida == 6) {
-    givenAnswers[3] = "true";
-    }
-  } else {
-    givenAnswers[3] = "false";
-  }
 
 if (Boolean((outer1 == 1 && outer3 == 2) || (outer1 == 2 && outer3 == 1)) === true) {
-  if (midc == 4) {
-    givenAnswers[5] = "true";
+    if (midc == 4) {
+      givenAnswers[5] = "true";
+      }
+    } else if (Boolean((outer1 == 1 && outer3 == 3) || (outer1 == 3 && outer3 == 1)) === true) {
+      if (midc == 5) {
+        givenAnswers[5] = "true";
+      }
+    } else if (Boolean((outer1 == 2 && outer3 == 3) || (outer1 == 3 && outer3 == 2)) === true) {
+      if (midc == 6) {
+        givenAnswers[5] = "true";
+      }
+    } else {
+      givenAnswers[5] = "false";
     }
-  } else {
-    givenAnswers[5] = "false";
-  }
-if (Boolean((outer1 == 1 && outer3 == 3) || (outer1 == 3 && outer3 == 1)) === true) {
-  if (midc == 5) {
-    givenAnswers[5] = "true";
-    }
-  } else {
-    givenAnswers[5] = "false";
-  }
-if (Boolean((outer1 == 2 && outer3 == 3) || (outer1 == 3 && outer3 == 2)) === true) {
-  if (midc == 6) {
-    givenAnswers[5] = "true";
-    }
-  } else {
-    givenAnswers[5] = "false";
-  }
 
 if (Boolean((outer2 == 1 && outer3 == 2) || (outer2 == 2 && outer3 == 1)) === true) {
-  if (midb == 4) {
-    givenAnswers[4] = "true";
+    if (midb == 4) {
+      givenAnswers[4] = "true";
+      }
+    } else if (Boolean((outer2 == 1 && outer3 == 3) || (outer2 == 3 && outer3 == 1)) === true) {
+      if (midb == 5) {
+        givenAnswers[4] = "true";
+      }
+    } else if (Boolean((outer2 == 2 && outer3 == 3) || (outer2 == 3 && outer3 == 2)) === true) {
+      if (midb == 6) {
+        givenAnswers[4] = "true";
+      }
+    } else {
+      givenAnswers[4] = "false";
     }
-  } else {
-    givenAnswers[4] = "false";
-  }
-if (Boolean((outer2 == 1 && outer3 == 3) || (outer2 == 3 && outer3 == 1)) === true) {
-  if (midb == 5) {
-    givenAnswers[4] = "true";
-    }
-  } else {
-    givenAnswers[4] = "false";
-  }
-if (Boolean((outer2 == 2 && outer3 == 3) || (outer2 == 3 && outer3 == 2)) === true) {
-  if (midb == 6) {
-    givenAnswers[4] = "true";
-    }
-  } else {
-    givenAnswers[4] = "false";
-  }
 }
 function handleMouseover(event) {
   var boxElement = event.target;
