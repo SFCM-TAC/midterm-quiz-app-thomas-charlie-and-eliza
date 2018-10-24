@@ -29,6 +29,28 @@ if (inner == 7) {
   } else {
   givenAnswers[6] = "false";
   }
+
+if (Boolean((outer1 == 1 && outer2 == 2) || (outer1 == 2 && outer2 == 1)) === true) {
+  if (mida == 4) {
+    givenAnswers[3] = "true"
+    }
+  } else {
+    givenAnswers[3] = "false"
+  }
+if (Boolean((outer1 == 1 && outer2 == 3) || (outer1 == 3 && outer2 == 1)) === true) {
+  if (mida == 5) {
+    givenAnswers[3] = "true"
+    }
+  } else {
+    givenAnswers[3] = "false"
+  }
+if (Boolean((outer1 == 2 && outer2 == 3) || (outer1 == 3 && outer3 == 2)) === true) {
+  if (mida == 4) {
+    givenAnswers[3] = "true"
+    }
+  } else {
+    givenAnswers[3] = "false"
+  }
 }
 function handleMouseover(event) {
   var boxElement = event.target;
