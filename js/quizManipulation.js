@@ -1,3 +1,4 @@
+
 var givenAnswers = [null, null, null, null, null, null, null]
 var outer1 = null
 var outer2 = null
@@ -6,8 +7,23 @@ var mida = null
 var midb = null
 var midc = null
 var inner = null
-function testAnswers(givenAnswers){
-if
+
+function testAnswers(){
+if (Boolean(outer1 == 1 || outer1 == 2 || outer1 == 3) === true) {
+  givenAnswers[0] = "true";
+  } else {
+  givenAnswers[0] = "false";
+  }
+if (Boolean(outer2 == 1 || outer2 == 2 || outer2 == 3) === true) {
+  givenAnswers[1] = "true";
+  } else {
+  givenAnswers[1] = "false";
+  }
+if (Boolean(outer3 == 1 || outer3 == 2 || outer3 == 3) === true) {
+  givenAnswers[2] = "true";
+  } else {
+  givenAnswers[2] = "false";
+  }
 }
 function handleMouseover(event) {
   var boxElement = event.target;
