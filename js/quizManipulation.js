@@ -24,6 +24,11 @@ if (Boolean(outer3 == 1 || outer3 == 2 || outer3 == 3) === true) {
   } else {
   givenAnswers[2] = "false";
   }
+if (inner == 7) {
+  givenAnswers[6] = "true";
+  } else {
+  givenAnswers[6] = "false";
+  }
 }
 function handleMouseover(event) {
   var boxElement = event.target;
