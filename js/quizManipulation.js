@@ -1,86 +1,50 @@
-
-var newColor = ""
-
-function changeBoxColors(color) {
-  var boxClass = document.getElementsByClassName("box")
-  if (boxClass.length > 1) {
-    for (var i=0; i<boxClass.length; i++) {
-      switch (color) {
-        case "red":
-          boxClass[i].classList.remove("yellow", "blue", "grey");
-          boxClass[i].classList.add("red");
-          newColor = "red";
-          break;
-
-        case "blue":
-          boxClass[i].classList.remove("yellow", "red", "grey");
-          boxClass[i].classList.add("blue");
-          newColor = "blue";
-          break;
-
-        case "yellow":
-          boxClass[i].classList.remove("blue", "red", "grey");
-          boxClass[i].classList.add("yellow");
-          newColor = "yellow";
-          break;
-
-        default:
-          boxClass[i].classList.remove("blue", "yellow", "red")
-    }
-  }
+var givenAnswers = [null, null, null, null, null, null, null]
+var outer1 = null
+var outer2 = null
+var outer3 = null
+var mida = null
+var midb = null
+var midc = null
+var inner = null
+function testAnswers(givenAnswers){
+if
 }
-  console.log('Selected color: ' + color);
-}
-
-function addBox() {
-  console.log('Adding a new box');
-
-  var newBoxElement = document.createElement('div');
-    newBoxElement.setAttribute("class", "box");
-    if (Boolean(newColor) == true) {
-      newBoxElement.classList.add(newColor)
-    } else {
-      newBoxElement.classList.add("grey")
-    }
-    var position = document.getElementById("boxes");
-    position.appendChild(newBoxElement);
-
-  newBoxElement.addEventListener('click', handleBoxClick);
-}
-
-var selectedBoxes = document.getElementsByClassName("box-selected");
-function removeSelectedBoxes() {
-  var parent = document.getElementById("boxes");
-  while (0<selectedBoxes.length) {
-    parent.removeChild(selectedBoxes[0]);
-}
-  console.log('Removing selected boxes');
-}
-
 function handleMouseover(event) {
   var boxElement = event.target;
   boxElement.classList.add("box-selected")
-  // if (boxElement.classList.contains("box-selected") === false) {
-  //   boxElement.classList.add("box-selected");
-  // } else if (boxElement.classList.contains("box-selected") === true) {
-  //   boxElement.classList.remove("box-selected")
-  // }
-  console.log('Selecting box: ', boxElement);
+  // console.log('Selecting box: ', boxElement);
 }
 
 function handleMouseout(event) {
   var boxElement = event.target;
   boxElement.classList.remove("box-selected")
-  // if (boxElement.classList.contains("box-selected") === false) {
-  //   boxElement.classList.add("box-selected");
-  // } else if (boxElement.classList.contains("box-selected") === true) {
-  //   boxElement.classList.remove("box-selected")
-  // }
-  console.log('Selecting box: ', boxElement);
+  // console.log('De-selecting box: ', boxElement);
 }
 
-function handleColorSelect(event) {
-  changeBoxColors(event.target.id);
+var mousemoveY = null
+var mousemoveX = null
+
+
+function handleMousemove(event) {
+  return mousemoveY = event.y
+  return mousemoveX = event.x
+  console.log(event.x, event.y)
+}
+
+function handleGrabBox(event) {
+var SelectedID = event.target.id;
+var followerEl = document.getElementById(SelectedID)
+console.log(followerEl);
+console.log(mousemoveY, mousemoveX);
+followerEl.style.top = mousemoveY;
+followerEl.style.left = mousemoveX;
+}
+
+function handleDropBox(event) {
+var followerEl = event.target;
+console.log("Dropped");
+followerEl.style.top = event.y;
+followerEl.style.left = event.x;
 }
 
 function attachListeners() {
@@ -90,8 +54,12 @@ function attachListeners() {
   document.querySelectorAll('.box').forEach(function(box){
       box.addEventListener('mouseout', handleMouseout);
     });
-  document.querySelectorAll('.color-selector').forEach(function(color){
-    color.addEventListener('click', handleColorSelect);
+  document.querySelectorAll('.box').forEach(function(box){
+    box.addEventListener('mousedown', handleGrabBox);
+  });
+  document.addEventListener('mousemove', handleMousemove);
+  document.querySelectorAll('.box').forEach(function(box){
+    box.addEventListener('mouseup', handleDropBox);
   });
   document.querySelector('#addButton').addEventListener('click', addBox);
   document.querySelector('#removeButton').addEventListener('click', removeSelectedBoxes);
