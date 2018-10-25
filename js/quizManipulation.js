@@ -3,7 +3,8 @@ function allowDrop(ev) {
 }
 
 function drag(ev) {
-    ev.dataTransfer.setData("text", ev.target.id);
+    ev.dataTransfer.setData("text", ev
+    .target.id);
 }
 
 function drop(ev) {
@@ -23,17 +24,6 @@ var midb = 6
 var midc = 8
 var inner = 7
 
-
-function changeBoxColors(color) {
-  var boxClass = document.getElementsByClassName("box")
-  if (boxClass.length > 1) {
-    for (var i=0; i<boxClass.length; i++) {
-      switch (color) {
-        case "red":
-          boxClass[i].classList.remove("yellow", "blue", "grey");
-          boxClass[i].classList.add("red");
-          newColor = "red";
-          break;
 
 
 function testAnswers(){
@@ -118,7 +108,6 @@ function handleMouseout(event) {
   var boxElement = event.target;
   boxElement.classList.remove("box-selected")
   // console.log('De-selecting box: ', boxElement);
-<<<<<<< HEAD
 }
 
 var mousemoveY = null
@@ -140,29 +129,6 @@ followerEl.style.top = mousemoveY;
 followerEl.style.left = mousemoveX;
 }
 
-=======
-}
-
-var mousemoveY = null
-var mousemoveX = null
-
-
-function handleMousemove(event) {
-  return mousemoveY = event.y
-  return mousemoveX = event.x
-  console.log(event.x, event.y)
-}
-
-function handleGrabBox(event) {
-var SelectedID = event.target.id;
-var followerEl = document.getElementById(SelectedID)
-console.log(followerEl);
-console.log(mousemoveY, mousemoveX);
-followerEl.style.top = mousemoveY;
-followerEl.style.left = mousemoveX;
-}
-
->>>>>>> 74b817e55c78b904a59abe181abf38d1d236bb70
 function handleDropBox(event) {
 var followerEl = event.target;
 console.log("Dropped");
