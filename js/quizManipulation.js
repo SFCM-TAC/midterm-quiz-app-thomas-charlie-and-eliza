@@ -1,5 +1,12 @@
 
-var newColor = ""
+var givenAnswers = [null, null, null, null, null, null, null]
+var outer1 = 12
+var outer2 = 2
+var outer3 = 3
+var mida = 4
+var midb = 6
+var midc = 8
+var inner = 7
 
 function allowDrop(ev) {
     ev.preventDefault();
@@ -26,75 +33,115 @@ function changeBoxColors(color) {
           newColor = "red";
           break;
 
-        case "blue":
-          boxClass[i].classList.remove("yellow", "red", "grey");
-          boxClass[i].classList.add("blue");
-          newColor = "blue";
-          break;
 
-        case "yellow":
-          boxClass[i].classList.remove("blue", "red", "grey");
-          boxClass[i].classList.add("yellow");
-          newColor = "yellow";
-          break;
+function testAnswers(){
 
-        default:
-          boxClass[i].classList.remove("blue", "yellow", "red")
-    }
+if (Boolean(outer1 == 1 || outer1 == 2 || outer1 == 3) === true) {
+  givenAnswers[0] = "true";
+  } else {
+  givenAnswers[0] = "false";
   }
-}
-  console.log('Selected color: ' + color);
-}
+if (Boolean(outer2 == 1 || outer2 == 2 || outer2 == 3) === true) {
+  givenAnswers[1] = "true";
+  } else {
+  givenAnswers[1] = "false";
+  }
+if (Boolean(outer3 == 1 || outer3 == 2 || outer3 == 3) === true) {
+  givenAnswers[2] = "true";
+  } else {
+  givenAnswers[2] = "false";
+  }
+if (inner == 7) {
+  givenAnswers[6] = "true";
+  } else {
+  givenAnswers[6] = "false";
+  }
 
-function addBox() {
-  console.log('Adding a new box');
-
-  var newBoxElement = document.createElement('div');
-    newBoxElement.setAttribute("class", "box");
-    if (Boolean(newColor) == true) {
-      newBoxElement.classList.add(newColor)
+if (Boolean((outer1 == 1 && outer2 == 2) || (outer1 == 2 && outer2 == 1)) === true) {
+    if (mida == 4) {
+      givenAnswers[3] = "true";
+    } else {givenAnswers[3] = "false"}
+    } else if (Boolean((outer1 == 1 && outer2 == 3) || (outer1 == 3 && outer2 == 1)) === true) {
+      if (mida == 5) {
+        givenAnswers[3] = "true";
+      } else {givenAnswers[3] = "false"}
+    } else if (Boolean((outer1 == 2 && outer2 == 3) || (outer1 == 3 && outer2 == 2)) === true) {
+      if (mida == 6) {
+        givenAnswers[3] = "true";
+      } else {givenAnswers[3] = "false"}
     } else {
-      newBoxElement.classList.add("grey")
+      givenAnswers[3] = "unknown";
     }
-    var position = document.getElementById("boxes");
-    position.appendChild(newBoxElement);
 
-  newBoxElement.addEventListener('click', handleBoxClick);
-}
+if (Boolean((outer1 == 1 && outer3 == 2) || (outer1 == 2 && outer3 == 1)) === true) {
+    if (midc == 4) {
+      givenAnswers[5] = "true";
+    } else {givenAnswers[5] = "false"}
+    } else if (Boolean((outer1 == 1 && outer3 == 3) || (outer1 == 3 && outer3 == 1)) === true) {
+      if (midc == 5) {
+        givenAnswers[5] = "true";
+      } else {givenAnswers[5] = "false"}
+    } else if (Boolean((outer1 == 2 && outer3 == 3) || (outer1 == 3 && outer3 == 2)) === true) {
+      if (midc == 6) {
+        givenAnswers[5] = "true";
+      } else {givenAnswers[5] = "false"}
+    } else {
+      givenAnswers[5] = "unknown";
+    }
 
-var selectedBoxes = document.getElementsByClassName("box-selected");
-function removeSelectedBoxes() {
-  var parent = document.getElementById("boxes");
-  while (0<selectedBoxes.length) {
-    parent.removeChild(selectedBoxes[0]);
+if (Boolean((outer2 == 1 && outer3 == 2) || (outer2 == 2 && outer3 == 1)) === true) {
+    if (midb == 4) {
+      givenAnswers[4] = "true";
+    } else {givenAnswers[4] = "false"}
+    } else if (Boolean((outer2 == 1 && outer3 == 3) || (outer2 == 3 && outer3 == 1)) === true) {
+      if (midb == 5) {
+        givenAnswers[4] = "true";
+      } else {givenAnswers[4] = "false"}
+    } else if (Boolean((outer2 == 2 && outer3 == 3) || (outer2 == 3 && outer3 == 2)) === true) {
+      if (midb == 6) {
+        givenAnswers[4] = "true";
+      } else {givenAnswers[4] = "false"}
+    } else {
+      givenAnswers[4] = "unknown";
+    }
+    console.log(givenAnswers)
 }
-  console.log('Removing selected boxes');
-}
-
 function handleMouseover(event) {
   var boxElement = event.target;
   boxElement.classList.add("box-selected")
-  // if (boxElement.classList.contains("box-selected") === false) {
-  //   boxElement.classList.add("box-selected");
-  // } else if (boxElement.classList.contains("box-selected") === true) {
-  //   boxElement.classList.remove("box-selected")
-  // }
-  console.log('Selecting box: ', boxElement);
+  // console.log('Selecting box: ', boxElement);
 }
 
 function handleMouseout(event) {
   var boxElement = event.target;
   boxElement.classList.remove("box-selected")
-  // if (boxElement.classList.contains("box-selected") === false) {
-  //   boxElement.classList.add("box-selected");
-  // } else if (boxElement.classList.contains("box-selected") === true) {
-  //   boxElement.classList.remove("box-selected")
-  // }
-  console.log('Selecting box: ', boxElement);
+  // console.log('De-selecting box: ', boxElement);
 }
 
-function handleColorSelect(event) {
-  changeBoxColors(event.target.id);
+var mousemoveY = null
+var mousemoveX = null
+
+
+function handleMousemove(event) {
+  return mousemoveY = event.y
+  return mousemoveX = event.x
+  console.log(event.x, event.y)
+}
+
+function handleGrabBox(event) {
+var SelectedID = event.target.id;
+var followerEl = document.getElementById(SelectedID)
+console.log(followerEl);
+console.log(mousemoveY, mousemoveX);
+followerEl.style.top = mousemoveY;
+followerEl.style.left = mousemoveX;
+}
+
+function handleDropBox(event) {
+var followerEl = event.target;
+console.log("Dropped");
+followerEl.style.top = event.y;
+followerEl.style.left = event.x;
 }
 
 function attachListeners() {
@@ -104,10 +151,13 @@ function attachListeners() {
   document.querySelectorAll('.box').forEach(function(box){
       box.addEventListener('mouseout', handleMouseout);
     });
-  document.querySelectorAll('.color-selector').forEach(function(color){
-    color.addEventListener('click', handleColorSelect);
+  document.querySelectorAll('.box').forEach(function(box){
+    box.addEventListener('mousedown', handleGrabBox);
   });
-  document.querySelector('#addButton').addEventListener('click', addBox);
-  document.querySelector('#removeButton').addEventListener('click', removeSelectedBoxes);
+  document.addEventListener('mousemove', handleMousemove);
+  document.querySelectorAll('.box').forEach(function(box){
+    box.addEventListener('mouseup', handleDropBox);
+  });
+  document.querySelector('#checkButton').addEventListener('click', testAnswers);
 }
 document.addEventListener("DOMContentLoaded", attachListeners);
