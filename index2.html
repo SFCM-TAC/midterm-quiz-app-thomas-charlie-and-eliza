@@ -1,3 +1,8 @@
+<!-- // We are experimenting with two different options for the venn diagram
+// index.html & styles.css is our first option, and index2.html & styles2.css
+// is our second. -->
+
+
 <html>
   <head>
     <script src="js/quizManipulation.js"></script>
@@ -5,88 +10,76 @@
   </head>
   <body>
     <div class="container">
-      <div id="answers" class="section">
-        <div class="box">Bank Robbers</div>
-        <div class="box">DJs</div>
-        <div class="box">Preachers</div>
-        <div class="box">Everybody on the floor</div>
-        <div class="box">Give me your money</div>
-        <div class="box">Are you with me</div>
-        <div class="box">Put your hands up</div>
-        <div class="box">Police Officers</div>
-        <div class="box">Get down on the ground</div>
-        <div class="box">Teacher</div>
-        <div class="box">Are you with me?</div>
-        <div class="box">College student</div>
+      <div id="answers" class="section" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <div id="1" class="box" ondrop="drop(event)" ondragover="allowDrop(event)"
+          draggable="true" ondragstart="drag(event)">Bank Robbers</div>
+        <div id="2" class="box">DJs</div>
+        <div id="3" class="box">Preachers</div>
+        <div id="4" class="box">Everybody on the floor</div>
+        <div id="5" class="box">Give me your money</div>
+        <div id="6" class="box">Are you with me</div>
+        <div id="7" class="box">Put your hands up</div>
+        <div id="8" class="box">Police Officers</div>
+        <div id="9" class="box">Get down on the ground</div>
+        <div id="10" class="box">Teacher</div>
+        <div id="11" class="box">Are you with me?</div>
+        <div id="12" class="box">College student</div>
           <div class="box">Where are the Nachos?</div>
         <div><button id="checkButton">Check Answer</button></div>
       </div>
-<<<<<<< HEAD
-      <div id="vennDiagram">
-        <div id="outer1" class="outer">
-        </div>
-        <div id="outer2" class="outer">
-        </div>
-        <div id="outer3" class="outer">
-        </div>
-        <div id="midaw1" class="mwrap">
-        <div id="midaw2" class="mwrap2">
-        <div id="mida" class="content mid"></div>
-        </div>
-        </div>
-        <div id="midbw1" class="mwrap">
-        <div id="midbw2" class="mwrap2">
-        <div id="midb" class="content mid"></div>
-        </div>
-        </div>
-        <div id="midcw1" class="mwrap">
-        <div id="midcw2" class="mwrap2">
-        <div id="midc" class="content mid"></div>
-        </div>
-        </div>
-        <div class="innerw">
-        <div class="innerw2">
-        <div class="innerw3">
-        <div class="inner">
-        </div>
-        </div>
-        </div>
-        </div>
-=======
       <div id="vennDiagram" class="section">
->>>>>>> 26509a7fe5c650521529ba7ea17a83024648e2b8
+        <div id="outer1" class="outer VD" class="section" ondrop="drop(event)" ondragover="allowDrop(event)">
+        </div>
+        <div id="outer2" class="outer VD" class="section" ondrop="drop(event)" ondragover="allowDrop(event)">
+        </div>
+        <div id="outer3" class="outer VD" class="section" ondrop="drop(event)" ondragover="allowDrop(event)">
+        </div>
+        <div id="midaw1" class="mwrap VD">
+        <div id="midaw2" class="mwrap2 VD">
+        <div id="mida" class="content mid VD" class="section" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        </div>
+        <div id="midbw1" class="mwrap VD">
+        <div id="midbw2" class="mwrap2 VD">
+        <div id="midb" class="content mid VD" class="section" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        </div>
+        <div id="midcw1" class="mwrap VD">
+        <div id="midcw2" class="mwrap2 VD">
+        <div id="midc" class="content mid VD" class="section" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        </div>
+        <div class="innerw VD">
+        <div class="innerw2 VD">
+        <div class="innerw3 VD">
+        <div class="inner VD" class="section" ondrop="drop(event)" ondragover="allowDrop(event)">
+        </div>
+        </div>
+        </div>
+        </div>
       </div>
+
     </div>
-    <div id="outer1" class="outer">
-    </div>
-    <div id="outer2" class="outer">
-    </div>
-    <div id="outer3" class="outer">
-    </div>
-    <div id="midaw1" class="mwrap">
-    <div id="midaw2" class="mwrap2">
-    <div id="mida" class="content mid"></div>
-    </div>
-    </div>
-    <div id="midbw1" class="mwrap">
-    <div id="midbw2" class="mwrap2">
-    <div id="midb" class="content mid"></div>
-    </div>
-    </div>
-    <div id="midcw1" class="mwrap">
-    <div id="midcw2" class="mwrap2">
-    <div id="midc" class="content mid"></div>
-    </div>
-    </div>
-    <div class="innerw">
-    <div class="innerw2">
-    <div class="innerw3">
-    <div class="inner">
-    </div>
-    </div>
-    </div>
-    </div>
+
+
+<div id="testDad" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+  <div id="test1" ondrop="drop(event)" ondragover="allowDrop(event)"
+    draggable="true" ondragstart="drag(event)">
+    this is some text
+  </div>
+
+  <div id="test2"
+    draggable="true" ondragstart="drag(event)">
+    this is some text 2
+  </div>
+
+</div>
+
+
+<div id="testDad" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<div id="testDad" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
   </body>
-
-
 </html>
