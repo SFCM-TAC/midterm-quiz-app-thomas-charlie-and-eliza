@@ -118,6 +118,7 @@ function handleMouseout(event) {
   var boxElement = event.target;
   boxElement.classList.remove("box-selected")
   // console.log('De-selecting box: ', boxElement);
+<<<<<<< HEAD
 }
 
 var mousemoveY = null
@@ -139,6 +140,29 @@ followerEl.style.top = mousemoveY;
 followerEl.style.left = mousemoveX;
 }
 
+=======
+}
+
+var mousemoveY = null
+var mousemoveX = null
+
+
+function handleMousemove(event) {
+  return mousemoveY = event.y
+  return mousemoveX = event.x
+  console.log(event.x, event.y)
+}
+
+function handleGrabBox(event) {
+var SelectedID = event.target.id;
+var followerEl = document.getElementById(SelectedID)
+console.log(followerEl);
+console.log(mousemoveY, mousemoveX);
+followerEl.style.top = mousemoveY;
+followerEl.style.left = mousemoveX;
+}
+
+>>>>>>> 74b817e55c78b904a59abe181abf38d1d236bb70
 function handleDropBox(event) {
 var followerEl = event.target;
 console.log("Dropped");
