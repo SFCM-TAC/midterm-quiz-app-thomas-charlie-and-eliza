@@ -8,6 +8,20 @@ var midb = 6
 var midc = 8
 var inner = 7
 
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+
 function testAnswers(){
 
 if (Boolean(outer1 == 1 || outer1 == 2 || outer1 == 3) === true) {
@@ -133,6 +147,5 @@ function attachListeners() {
     box.addEventListener('mouseup', handleDropBox);
   });
   document.querySelector('#checkButton').addEventListener('click', testAnswers);
-  document.querySelector('#removeButton').addEventListener('click', removeSelectedBoxes);
 }
 document.addEventListener("DOMContentLoaded", attachListeners);
