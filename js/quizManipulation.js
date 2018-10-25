@@ -24,8 +24,6 @@ var midb = 6
 var midc = 8
 var inner = 7
 
-
-
 function testAnswers(){
 
 if (Boolean(outer1 == 1 || outer1 == 2 || outer1 == 3) === true) {
