@@ -15,6 +15,7 @@ function drop(ev) {
 
 
 
+
 var givenAnswers = [null, null, null, null, null, null, null]
 var outer1 = 12
 var outer2 = 2
@@ -108,32 +109,6 @@ function handleMouseout(event) {
   // console.log('De-selecting box: ', boxElement);
 }
 
-var mousemoveY = null
-var mousemoveX = null
-
-
-function handleMousemove(event) {
-  return mousemoveY = event.y
-  return mousemoveX = event.x
-  console.log(event.x, event.y)
-}
-
-function handleGrabBox(event) {
-var SelectedID = event.target.id;
-var followerEl = document.getElementById(SelectedID)
-console.log(followerEl);
-console.log(mousemoveY, mousemoveX);
-followerEl.style.top = mousemoveY;
-followerEl.style.left = mousemoveX;
-}
-
-function handleDropBox(event) {
-var followerEl = event.target;
-console.log("Dropped");
-followerEl.style.top = event.y;
-followerEl.style.left = event.x;
-}
-
 function attachListeners() {
   document.querySelectorAll('.box').forEach(function(box){
     box.addEventListener('mouseover', handleMouseover);
@@ -141,13 +116,7 @@ function attachListeners() {
   document.querySelectorAll('.box').forEach(function(box){
       box.addEventListener('mouseout', handleMouseout);
     });
-  document.querySelectorAll('.box').forEach(function(box){
-    box.addEventListener('mousedown', handleGrabBox);
-  });
-  document.addEventListener('mousemove', handleMousemove);
-  document.querySelectorAll('.box').forEach(function(box){
-    box.addEventListener('mouseup', handleDropBox);
-  });
+
   document.querySelector('#checkButton').addEventListener('click', testAnswers);
 }
 document.addEventListener("DOMContentLoaded", attachListeners);
