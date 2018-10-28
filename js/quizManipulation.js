@@ -1,21 +1,7 @@
-function allowDrop(ev) {
-    event.preventDefault();
-}
 
-function drag(ev) {
-    ev.dataTransfer.setData("text", ev
-    .target.id);
-}
-
-function drop(ev) {
-    ev.preventDefault();
-    var data = ev.dataTransfer.getData("text");
-    ev.target.appendChild(document.getElementById(data));
-}
-
-
-
-
+const B1 = 1
+var RegionID = null
+var BoxID = null
 var givenAnswers = [null, null, null, null, null, null, null]
 var outer1 = 12
 var outer2 = 2
@@ -25,11 +11,66 @@ var midb = 6
 var midc = 8
 var inner = 7
 
-function testAnswers(){
+function allowDrop(ev) {
+    event.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev
+    .target.id);
+    return BoxID = event.target.id;
+    console.log(BoxID)
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+
+    RegionID = (event.target.id);
+    switch (RegionID) {
+      case "outer1":
+        outer1 = BoxID;
+        break;
+      case "outer2":
+        outer2 = BoxID;
+        break;
+      case "outer3":
+        outer3 = BoxID;
+        break;
+      case "mida":
+        mida = BoxID;
+        break;
+      case "midb":
+        midb = BoxID;
+        break;
+      case "midc":
+        midc = BoxID;
+        break;
+      case "inner":
+        inner = BoxID;
+        break;
+    }
+}
+
+<<<<<<< HEAD
+
+var givenAnswers = [null, null, null, null, null, null, null]
+var outer1 = 12
+var outer2 = 2
+var outer3 = 3
+var mida = 4
+var midb = 6
+var midc = 8
+var inner = 7
+=======
+>>>>>>> e0c992eb8aaabf9f0c9970a0628da519f5b2915d
+
+function testAnswers() {
 
 if (Boolean(outer1 == 1 || outer1 == 2 || outer1 == 3) === true) {
   givenAnswers[0] = "true";
-  } else {
+} else {
   givenAnswers[0] = "false";
   }
 if (Boolean(outer2 == 1 || outer2 == 2 || outer2 == 3) === true) {
