@@ -1,56 +1,30 @@
 
 /* background color classes */
 
-
-#testDad {
-  text-align: center;
+#instruction {
+  /* background-color: #814374; */
+  /* border: 1px solid #F2F2F2; */
   color: white;
-  background-color: #fff;
-  background-color: rgba(255,255,255,0.5);
-  width: 20%;
-  height: 100px;
-  align-content: center;
-  overflow-y: auto;
-  margin: 10px;
-  padding: 10px;
-  border: 5px solid black;
+  margin-left: 10px;
+  width: 211px;
+  padding: 5px 5px;
+  font-style: italic;
+  font-size: 14px;
+  text-align: left;
 }
 
-#test1 {
-  text-align: center;
-  color: white;
-  background-color: red;
-  width: 80%;
-  align-content: center;
-  /* overflow-y: auto; */
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid black;
-}
-
-#test2 {
-  text-align: center;
-  color: white;
-  background-color: red;
-  width: 80%;
-  align-content: center;
-  /* overflow-y: auto; */
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid black;
-}
 
 #answers {
   text-align: center;
   color: white;
-  background-color: #515151;
+  border: 3px solid #F2F2F2;
+  background-color: #06425C;
   width: 200px;
-  height: 600px;
+  height: 650px;
   align-content: center;
   overflow-y: auto;
   margin: 10px;
-  padding: 10px;
-  /* border: 1px solid black; */
+  padding: 5px;
 
 
   /* display: flex;
@@ -66,10 +40,10 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: white;
+  color: #F2F2F2;
   /* box-sizing: border-box; */
   width: 100px;
-  /* border: 1px solid grey; */
+  /* border: 1px solid #F2F2F2; */
   padding: 2px;
   margin: auto;
   margin-top: 10px;
@@ -77,8 +51,12 @@
   background-color: 255, 255, 255, 0;
 }
 
+.box:hover {
+  color: #51A39D
+}
+
 #vennDiagram {
-  background-color: white;
+  /* background-color: #F2F2F2; */
   width: 80%;
   height: 80%;
   align-content: center;
@@ -88,13 +66,16 @@
 }
 
 
-.box-selected {
-  border: 1px solid white;
-}
+
+
+/* .box-selected {
+  border: 1px solid #51A39D;
+} */
 
 body {
   font-family: helvetica;
   font-size: 18px;
+  background-color: #06425C;
 }
 .container {
   /* display: flex; */
@@ -110,17 +91,19 @@ body {
 
 
 #checkButton {
-  background-color: #15b503;
+  background-color: #217196;
   border: none;
   color: white;
   margin-left: 10px;
-  width: 220px;
+  width: 216px;
   padding: 10px 10px;
   font-size: 25px;
-  font-family: ;
+  border: 2px solid #F2F2F2;
 }
 
-
+#checkButton:hover {
+  background-color: #51A39D;
+}
 
 #secondanswerscolumn {
   text-align: center;
