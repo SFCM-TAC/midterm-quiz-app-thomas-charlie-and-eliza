@@ -1,6 +1,6 @@
 
-var RegionID = null
-var BoxID = null
+var regionID = null
+var boxID = null
 var givenAnswers = [null, null, null, null, null, null, null]
 var outer1 = null
 var outer2 = null
@@ -10,6 +10,10 @@ var midb = null
 var midc = null
 var inner = null
 
+function test() {
+  console.log("test success")
+}
+
 function allowDrop(ev) {
     event.preventDefault();
 }
@@ -17,8 +21,8 @@ function allowDrop(ev) {
 function drag(ev) {
     ev.dataTransfer.setData("text", ev
     .target.id);
-    return BoxID = event.target.id;
-    console.log(BoxID)
+    return boxID = event.target.id;
+    console.log(boxID)
 }
 
 function drop(ev) {
@@ -26,74 +30,87 @@ function drop(ev) {
     var data = ev.dataTransfer.getData("text");
     ev.target.appendChild(document.getElementById(data));
 
-    RegionID = (event.target.id);
-    console.log(RegionID)
-    switch (RegionID) {
+    regionID = (event.target.id);
+    console.log(regionID)
+    switch (regionID) {
       case "outer1":
-        outer1 = BoxID;
-        document.getElementById(BoxID).style.position = 'relative';
-        document.getElementById(BoxID).style.left = "120px";
-        document.getElementById(BoxID).style.top = '150px';
-        document.getElementById(BoxID).style.transform = 'rotate(0deg)'
-        document.getElementById(BoxID).style.margin = "0px";
+        outer1 = boxID;
+        document.getElementById(boxID).style.position = 'relative';
+        document.getElementById(boxID).style.left = "120px";
+        document.getElementById(boxID).style.top = '150px';
+        document.getElementById(boxID).style.transform = 'rotate(0deg)'
+        document.getElementById(boxID).style.margin = "0px";
+        document.getElementById(regionID).ondrop = 'null';
         break;
       case "outer2":
-        outer2 = BoxID;
-        document.getElementById(BoxID).style.position = 'relative';
-        document.getElementById(BoxID).style.left = "220px";
-        document.getElementById(BoxID).style.top = '150px';
-        document.getElementById(BoxID).style.transform = 'rotate(0deg)'
-        document.getElementById(BoxID).style.margin = "0px";
+        outer2 = boxID;
+        document.getElementById(boxID).style.position = 'relative';
+        document.getElementById(boxID).style.left = "220px";
+        document.getElementById(boxID).style.top = '150px';
+        document.getElementById(boxID).style.transform = 'rotate(0deg)'
+        document.getElementById(boxID).style.margin = "0px";
         break;
       case "outer3":
-        outer3 = BoxID;
-        document.getElementById(BoxID).style.position = 'relative';
-        document.getElementById(BoxID).style.left = "180px";
-        document.getElementById(BoxID).style.top = '280px';
-        document.getElementById(BoxID).style.transform = 'rotate(0deg)'
-        document.getElementById(BoxID).style.margin = "0px";
+        outer3 = boxID;
+        document.getElementById(boxID).style.position = 'relative';
+        document.getElementById(boxID).style.left = "180px";
+        document.getElementById(boxID).style.top = '280px';
+        document.getElementById(boxID).style.transform = 'rotate(0deg)'
+        document.getElementById(boxID).style.margin = "0px";
         break;
       case "mida":
-        mida = BoxID;
-        document.getElementById(BoxID).style.position = 'relative';
-        document.getElementById(BoxID).style.left = "60px";
-        document.getElementById(BoxID).style.top = '120px';
-        document.getElementById(BoxID).style.transform = 'rotate(0deg)'
-        document.getElementById(BoxID).style.margin = "0px";
+        mida = boxID;
+        document.getElementById(boxID).style.position = 'relative';
+        document.getElementById(boxID).style.left = "60px";
+        document.getElementById(boxID).style.top = '120px';
+        document.getElementById(boxID).style.transform = 'rotate(0deg)'
+        document.getElementById(boxID).style.margin = "0px";
         break;
       case "midb":
-        midb = BoxID;
-        document.getElementById(BoxID).style.position = 'relative';
-        document.getElementById(BoxID).style.left = "280px";
-        document.getElementById(BoxID).style.top = '130px';
-        document.getElementById(BoxID).style.transform = 'rotate(-6deg)'
-        document.getElementById(BoxID).style.margin = "0px";
+        midb = boxID;
+        document.getElementById(boxID).style.position = 'relative';
+        document.getElementById(boxID).style.left = "280px";
+        document.getElementById(boxID).style.top = '130px';
+        document.getElementById(boxID).style.transform = 'rotate(-6deg)'
+        document.getElementById(boxID).style.margin = "0px";
         break;
       case "midc":
-        midc = BoxID;
-        document.getElementById(BoxID).style.position = 'relative';
-        document.getElementById(BoxID).style.left = "130px";
-        document.getElementById(BoxID).style.top = '340px';
-        document.getElementById(BoxID).style.transform = 'rotate(8deg)'
-        document.getElementById(BoxID).style.margin = "0px";
+        midc = boxID;
+        document.getElementById(boxID).style.position = 'relative';
+        document.getElementById(boxID).style.left = "130px";
+        document.getElementById(boxID).style.top = '340px';
+        document.getElementById(boxID).style.transform = 'rotate(8deg)'
+        document.getElementById(boxID).style.margin = "0px";
         break;
       case "inner":
-        inner = BoxID;
-        document.getElementById(BoxID).style.position = 'relative';
-        document.getElementById(BoxID).style.left = "165px";
-        document.getElementById(BoxID).style.top = '75px';
-        document.getElementById(BoxID).style.transform = 'rotate(0deg)'
-        document.getElementById(BoxID).style.margin = "0px";
+        inner = boxID;
+        document.getElementById(boxID).style.position = 'relative';
+        document.getElementById(boxID).style.left = "165px";
+        document.getElementById(boxID).style.top = '75px';
+        document.getElementById(boxID).style.transform = 'rotate(0deg)'
+        document.getElementById(boxID).style.margin = "0px";
         break;
       case "answers":
-        document.getElementById(BoxID).style.position = 'relative';
-        document.getElementById(BoxID).style.left = "0px";
-        document.getElementById(BoxID).style.top = '0px';
-        document.getElementById(BoxID).style.transform = 'rotate(0deg)'
-        document.getElementById(BoxID).style.margin = "10px 50px";
+        document.getElementById(boxID).style.position = 'relative';
+        document.getElementById(boxID).style.left = "0px";
+        document.getElementById(boxID).style.top = '0px';
+        document.getElementById(boxID).style.transform = 'rotate(0deg)'
+        document.getElementById(boxID).style.margin = "10px 50px";
         break;
     }
 }
+
+function dragOut(event) {
+
+      // document.getElementById(regionID).addEventListener('ondragover', allowDrop);
+
+      if ( event.target.id == regionID ) {
+        // document.getElementById(regionID).addEventListener('drop', drop);
+        document.getElementById(regionID).drop = "drop(event)";
+        console.log('test')
+    }
+
+};
 
 function testAnswers() {
 
@@ -186,7 +203,9 @@ function attachListeners() {
   document.querySelectorAll('.box').forEach(function(box){
       box.addEventListener('mouseout', handleMouseout);
     });
-
+  // document.querySelectorAll('.vd').forEach(function(vd){
+  //     vd.addEventListener('ondragleave', dragOut);
+  // });
   document.querySelector('#checkButton').addEventListener('click', testAnswers);
 }
 document.addEventListener("DOMContentLoaded", attachListeners);
