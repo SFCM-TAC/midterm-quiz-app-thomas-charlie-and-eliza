@@ -1,15 +1,14 @@
 
-const B1 = 1
 var RegionID = null
 var BoxID = null
 var givenAnswers = [null, null, null, null, null, null, null]
-var outer1 = 12
-var outer2 = 2
-var outer3 = 3
-var mida = 4
-var midb = 6
-var midc = 8
-var inner = 7
+var outer1 = null
+var outer2 = null
+var outer3 = null
+var mida = null
+var midb = null
+var midc = null
+var inner = null
 
 function allowDrop(ev) {
     event.preventDefault();
@@ -28,28 +27,70 @@ function drop(ev) {
     ev.target.appendChild(document.getElementById(data));
 
     RegionID = (event.target.id);
+    console.log(RegionID)
     switch (RegionID) {
       case "outer1":
         outer1 = BoxID;
-        document.getElementById(BoxID).style.top = "100px";
+        document.getElementById(BoxID).style.position = 'relative';
+        document.getElementById(BoxID).style.left = "120px";
+        document.getElementById(BoxID).style.top = '150px';
+        document.getElementById(BoxID).style.transform = 'rotate(0deg)'
+        document.getElementById(BoxID).style.margin = "0px";
         break;
       case "outer2":
         outer2 = BoxID;
+        document.getElementById(BoxID).style.position = 'relative';
+        document.getElementById(BoxID).style.left = "220px";
+        document.getElementById(BoxID).style.top = '150px';
+        document.getElementById(BoxID).style.transform = 'rotate(0deg)'
+        document.getElementById(BoxID).style.margin = "0px";
         break;
       case "outer3":
         outer3 = BoxID;
+        document.getElementById(BoxID).style.position = 'relative';
+        document.getElementById(BoxID).style.left = "180px";
+        document.getElementById(BoxID).style.top = '280px';
+        document.getElementById(BoxID).style.transform = 'rotate(0deg)'
+        document.getElementById(BoxID).style.margin = "0px";
         break;
       case "mida":
         mida = BoxID;
+        document.getElementById(BoxID).style.position = 'relative';
+        document.getElementById(BoxID).style.left = "60px";
+        document.getElementById(BoxID).style.top = '120px';
+        document.getElementById(BoxID).style.transform = 'rotate(0deg)'
+        document.getElementById(BoxID).style.margin = "0px";
         break;
       case "midb":
         midb = BoxID;
+        document.getElementById(BoxID).style.position = 'relative';
+        document.getElementById(BoxID).style.left = "280px";
+        document.getElementById(BoxID).style.top = '130px';
+        document.getElementById(BoxID).style.transform = 'rotate(-6deg)'
+        document.getElementById(BoxID).style.margin = "0px";
         break;
       case "midc":
         midc = BoxID;
+        document.getElementById(BoxID).style.position = 'relative';
+        document.getElementById(BoxID).style.left = "130px";
+        document.getElementById(BoxID).style.top = '340px';
+        document.getElementById(BoxID).style.transform = 'rotate(8deg)'
+        document.getElementById(BoxID).style.margin = "0px";
         break;
       case "inner":
         inner = BoxID;
+        document.getElementById(BoxID).style.position = 'relative';
+        document.getElementById(BoxID).style.left = "165px";
+        document.getElementById(BoxID).style.top = '75px';
+        document.getElementById(BoxID).style.transform = 'rotate(0deg)'
+        document.getElementById(BoxID).style.margin = "0px";
+        break;
+      case "answers":
+        document.getElementById(BoxID).style.position = 'relative';
+        document.getElementById(BoxID).style.left = "0px";
+        document.getElementById(BoxID).style.top = '0px';
+        document.getElementById(BoxID).style.transform = 'rotate(0deg)'
+        document.getElementById(BoxID).style.margin = "10px 50px";
         break;
     }
 }
