@@ -180,8 +180,27 @@ if (Boolean((outer2 == 1 && outer3 == 2) || (outer2 == 2 && outer3 == 1)) === tr
     } else {
       givenAnswers[4] = "unknown";
     }
+  if ((givenAnswers[0] == "true") && (givenAnswers[1] == "true") && (givenAnswers[2] == "true") && (givenAnswers[3] == "true") && (givenAnswers[4] == "true") && (givenAnswers[5] == "true") && (givenAnswers[6] == "true")) {
+        document.getElementById('correct').style.display = "block";
+    } else {
+        document.getElementById('wrong').style.display = "block";
+    }
     console.log(givenAnswers)
 }
+
+function hideResponse() {
+  document.getElementById('correct').style.display = "none";
+  document.getElementById('wrong').style.display = "none";
+  document.getElementById('outer1').style.backgroundColor = '#814374';
+  document.getElementById('outer2').style.backgroundColor = '#814374';
+  document.getElementById('outer3').style.backgroundColor = '#814374';
+  document.getElementById('mida').style.backgroundColor = '#B7695C';
+  document.getElementById('midb').style.backgroundColor = '#B7695C';
+  document.getElementById('midc').style.backgroundColor = '#B7695C';
+  document.getElementById('inner').style.backgroundColor = '#CDBB79';
+
+}
+
 function handleMouseover(event) {
   var boxElement = event.target;
   boxElement.classList.add("box-selected")

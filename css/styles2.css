@@ -143,6 +143,31 @@ body {
   flex-wrap: wrap; */
 }
 
+.response {
+  background-color: white;
+  text-align: center;
+  padding-top: 80px;
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  top: 500px;
+  left:1125px;
+  z-index: 50;
+  border-color: white;
+  border-style: solid;
+  background-color: #217196;
+  font-size: 25px;
+  color: white;
+}
+
+#correct {
+  display: none;
+}
+
+#wrong {
+  display: none;
+}
+
 .vd {
   left: 150px;
   width: 440px;
@@ -233,6 +258,7 @@ body {
 #mida {
   margin-left: 219px;
   margin-top: 0px;
+  background-color: #B7695C;
 }
 #midbw1 {
   left: 690px;
@@ -242,6 +268,7 @@ body {
 #midb {
   margin-left: -75px;
   margin-top: 205px;
+  background-color: #B7695C;
 }
 #midcw1 {
   left: 585px;
@@ -251,9 +278,9 @@ body {
 #midc {
   margin-left: -85px;
   margin-top: -204px;
+  background-color: #B7695C;
 }
 .mid {
-  background-color: #B7695C;
   z-index: 15;
 }
 /* .mid:hover {
