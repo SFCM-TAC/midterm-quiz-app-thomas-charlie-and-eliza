@@ -94,12 +94,6 @@ function drop(ev) {
           document.getElementById(boxID).style.margin = "0px";
           break;
         default:
-          ev.target.appendChild(document.getElementById(answers));
-          document.getElementById(boxID).style.position = 'relative';
-          document.getElementById(boxID).style.left = "0px";
-          document.getElementById(boxID).style.top = '0px';
-          document.getElementById(boxID).style.transform = 'rotate(0deg)'
-          document.getElementById(boxID).style.margin = "10px 50px";
           break;
       }
     } else {
