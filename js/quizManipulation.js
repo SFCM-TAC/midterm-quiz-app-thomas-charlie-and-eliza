@@ -209,3 +209,134 @@ function attachListeners() {
   document.querySelector('#checkButton').addEventListener('click', testAnswers);
 }
 document.addEventListener("DOMContentLoaded", attachListeners);
+<<<<<<< HEAD
+=======
+
+
+function reload() {
+  location.reload();
+}
+
+
+function colorAnswers() {
+  testAnswers();
+  var i;
+  for(i = 0; i < givenAnswers.length; i++) {
+    switch (i) {
+      case 0:
+      console.log('0')
+        switch (givenAnswers[0]) {
+          case "true":
+          console.log('true')
+            document.getElementById("outer1").style.backgroundColor = 'green';
+            break;
+          case "false":
+            document.getElementById("outer1").style.backgroundColor = 'red';
+            break;
+          case "unknown":
+            document.getElementById('outer1').style.backgroundColor = 'yellow';
+            break;
+          };
+        break;
+
+      case 1:
+      console.log('1')
+        switch (givenAnswers[1]) {
+          case "true":
+            document.getElementById("outer2").style.backgroundColor = 'green';
+              console.log("true")
+              break;
+          case "false":
+            document.getElementById("outer2").style.backgroundColor = 'red';
+              console.log("False")
+              break;
+          case "unknown":
+            document.getElementById('outer2').style.backgroundColor = 'yellow';
+              console.log("Unknown")
+              break;
+            };
+        break;
+
+      case 2:
+        switch (givenAnswers[2]) {
+          case "true":
+            document.getElementById("outer3").style.backgroundColor = 'green';
+            break;
+          case "false":
+            document.getElementById("outer3").style.backgroundColor = 'red';
+            break;
+          case "unknown":
+            document.getElementById('outer3').style.backgroundColor = 'yellow';
+            break;
+            };
+        break;
+
+      case 3:
+        switch (givenAnswers[3]) {
+          case "true":
+            document.getElementById("mida").style.backgroundColor = 'green';
+            break;
+          case "false":
+            document.getElementById("mida").style.backgroundColor = 'red';
+            break;
+          case "unknown":
+            document.getElementById('mida').style.backgroundColor = 'yellow';
+            break;
+            };
+        break;
+
+      case 4:
+        switch (givenAnswers[4]) {
+          case "true":
+            document.getElementById("midb").style.backgroundColor = 'green';
+            break;
+          case "false":
+            document.getElementById("midb").style.backgroundColor = 'red';
+            break;
+          case "unknown":
+            document.getElementById('midb').style.backgroundColor = 'yellow';
+            break;
+            };
+        break;
+
+      case 5:
+        switch (givenAnswers[5]) {
+          case "true":
+            document.getElementById("midc").style.backgroundColor = 'green';
+            break;
+          case "false":
+            document.getElementById("midc").style.backgroundColor = 'red';
+            break;
+          case "unknown":
+            document.getElementById('midc').style.backgroundColor = 'yellow';
+            break;
+            };
+        break;
+
+      case 6:
+        switch (givenAnswers[6]) {
+          case "true":
+            document.getElementById("inner").style.backgroundColor = 'green';
+            break;
+          case "false":
+            document.getElementById("inner").style.backgroundColor = 'red';
+            break;
+          case "unknown":
+            document.getElementById('inner').style.backgroundColor = 'yellow';
+            break;
+            };
+        break;
+
+    };
+  };
+};
+console.log(HELLOOOOOO);
+
+
+// case "false":
+//   document.getElementById(ID).style.background = 'red';
+//   break;
+// case "unknown":
+//   document.getElementById(BoxID).style.background = 'yellow';
+//   break;
+>>>>>>> 690366ab34d7dd11aa3d100871f8edb8a087a3ff
