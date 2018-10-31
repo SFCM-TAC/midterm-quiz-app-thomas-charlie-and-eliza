@@ -126,8 +126,8 @@ body {
 
 .VD {
   left: 150px;
-  width: 240px;
-  height: 240px;
+  width: 440px;
+  height: 440px;
   border-radius: 50%;
   pointer-events: none;
   position: absolute;
@@ -136,8 +136,8 @@ body {
 
 
 .innerw {
-  left: 500px;
-  top: 200px;
+  left: 475px;
+  top: 195px;
   overflow: hidden;
   position: absolute;
   /* border: solid; */
@@ -147,8 +147,8 @@ body {
 }
 
 .innerw2 {
-  margin-left: 0px;
-  top: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   overflow: hidden;
   position: static;
   /* border: solid; */
@@ -157,7 +157,8 @@ body {
 }
 
 .innerw3 {
-  margin-left: 170px;
+  margin-left: 220px;
+  margin-right: 40px;
   top: 0px;
   overflow: hidden;
   position: static;
@@ -167,8 +168,8 @@ body {
 }
 
 .inner {
-  margin-left: -85px;
-  margin-top: 130px;
+  margin-left: -105px;
+  margin-top: 190px;
   background-color: palegreen;
   z-index: 20;
   position: static;
@@ -197,28 +198,30 @@ body {
   pointer-events: auto;
 }
 #midaw1 {
-  left: 500px;
-  top: 200px;
+  left: 476px;
+  top: 182px;
 }
 #mida {
-  margin-left: 170px;
+  margin-left: 219px;
   margin-top: 0px;
 }
 #midbw1 {
-  left: 670px;
-  top: 200px;
+  left: 690px;
+  top: 191px;
+  transform: rotate(6deg);
 }
 #midb {
-  margin-left: -85px;
-  margin-top: 130px;
+  margin-left: -75px;
+  margin-top: 205px;
 }
 #midcw1 {
   left: 585px;
-  top: 330px;
+  top: 387px;
+  transform: rotate(-8deg);
 }
 #midc {
   margin-left: -85px;
-  margin-top: -130px;
+  margin-top: -204px;
 }
 .mid {
   background-color: lightblue;
@@ -230,23 +233,41 @@ body {
 
 
 #outer1 {
-  left: 500px;
-  top: 200px;
+  left: 440px;
+  top: 166px;
 }
 
 #outer2 {
-  left: 670px;
-  top: 200px;
+  left: 710px;
+  top: 170px;
 }
 #outer3 {
-  left: 585px;
-  top: 330px;
+  left: 584px;
+  top: 390px;
 }
 .outer {
+  width: 451px;
+  height: 451px;
   background-color: lightcoral;
   z-index: 1;
   pointer-events: auto;
 }
+.outer2 {
+  width: 448px;
+  height: 448px;
+  background-color: lightcoral;
+  z-index: 1;
+  pointer-events: auto;
+}
+
+.outer3 {
+  width: 458px;
+  height: 458px;
+  background-color: lightcoral;
+  z-index: 1;
+  pointer-events: auto;
+}
+
 .outer:hover {
   background-color: red;
 }
