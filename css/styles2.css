@@ -5,7 +5,8 @@
 #testDad {
   text-align: center;
   color: white;
-  background-color: red;
+  background-color: #fff;
+  background-color: rgba(255,255,255,0.5);
   width: 20%;
   height: 100px;
   align-content: center;
@@ -43,12 +44,13 @@
   text-align: center;
   color: white;
   background-color: #515151;
-  width: 20%;
+  width: 200px;
+  height: 600px;
   align-content: center;
   overflow-y: auto;
   margin: 10px;
   padding: 10px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 
 
   /* display: flex;
@@ -59,18 +61,20 @@
 .box {
   /* position: relative;
   left: -100px; */
+  font-size: 16;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: white;
   /* box-sizing: border-box; */
-  width: 80%;
-  border: 1px solid grey;
-  padding: 5px;
+  width: 100px;
+  /* border: 1px solid grey; */
+  padding: 2px;
   margin: auto;
   margin-top: 10px;
-  background-color: black;
+  margin-bottom: 10px;
+  background-color: 255, 255, 255, 0;
 }
 
 #vennDiagram {
@@ -85,7 +89,7 @@
 
 
 .box-selected {
-  border: 3px solid white;
+  border: 1px solid white;
 }
 
 body {
@@ -93,7 +97,7 @@ body {
   font-size: 18px;
 }
 .container {
-  display: flex;
+  /* display: flex; */
   flex-direction: row;
   height: auto;
 }
@@ -103,15 +107,20 @@ body {
   border: 1px solid black;
 } */
 
+
+
 #checkButton {
-  margin-top: 20px;
-  background-color: #404040;
+  background-color: #15b503;
   border: none;
   color: white;
-  padding: 10px 40px;
+  margin-left: 10px;
+  width: 220px;
+  padding: 10px 10px;
   font-size: 25px;
   font-family: ;
 }
+
+
 
 #secondanswerscolumn {
   text-align: center;

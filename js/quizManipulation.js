@@ -53,19 +53,6 @@ function drop(ev) {
     }
 }
 
-<<<<<<< HEAD
-
-var givenAnswers = [null, null, null, null, null, null, null]
-var outer1 = 12
-var outer2 = 2
-var outer3 = 3
-var mida = 4
-var midb = 6
-var midc = 8
-var inner = 7
-=======
->>>>>>> e0c992eb8aaabf9f0c9970a0628da519f5b2915d
-
 function testAnswers() {
 
 if (Boolean(outer1 == 1 || outer1 == 2 || outer1 == 3) === true) {
