@@ -251,13 +251,13 @@ function colorAnswers() {
         switch (givenAnswers[0]) {
           case "true":
           console.log('true')
-            document.getElementById("outer1").style.backgroundColor = 'green';
+            document.getElementById("outer1").style.backgroundColor = '#51A39D';
             break;
           case "false":
-            document.getElementById("outer1").style.backgroundColor = 'red';
+            document.getElementById("outer1").style.backgroundColor = '#a35157';
             break;
           case "unknown":
-            document.getElementById('outer1').style.backgroundColor = 'yellow';
+            document.getElementById('outer1').style.backgroundColor = '#a39d51';
             break;
           };
         break;
@@ -266,15 +266,15 @@ function colorAnswers() {
       console.log('1')
         switch (givenAnswers[1]) {
           case "true":
-            document.getElementById("outer2").style.backgroundColor = 'green';
+            document.getElementById("outer2").style.backgroundColor = '#51A39D';
               console.log("true")
               break;
           case "false":
-            document.getElementById("outer2").style.backgroundColor = 'red';
+            document.getElementById("outer2").style.backgroundColor = '#a35157';
               console.log("False")
               break;
           case "unknown":
-            document.getElementById('outer2').style.backgroundColor = 'yellow';
+            document.getElementById('outer2').style.backgroundColor = '#a39d51';
               console.log("Unknown")
               break;
             };
@@ -283,13 +283,13 @@ function colorAnswers() {
       case 2:
         switch (givenAnswers[2]) {
           case "true":
-            document.getElementById("outer3").style.backgroundColor = 'green';
+            document.getElementById("outer3").style.backgroundColor = '#51A39D';
             break;
           case "false":
-            document.getElementById("outer3").style.backgroundColor = 'red';
+            document.getElementById("outer3").style.backgroundColor = '#a35157';
             break;
           case "unknown":
-            document.getElementById('outer3').style.backgroundColor = 'yellow';
+            document.getElementById('outer3').style.backgroundColor = '#a39d51';
             break;
             };
         break;
@@ -297,13 +297,13 @@ function colorAnswers() {
       case 3:
         switch (givenAnswers[3]) {
           case "true":
-            document.getElementById("mida").style.backgroundColor = 'green';
+            document.getElementById("mida").style.backgroundColor = '#64c1bb';
             break;
           case "false":
-            document.getElementById("mida").style.backgroundColor = 'red';
+            document.getElementById("mida").style.backgroundColor = '#c1646a';
             break;
           case "unknown":
-            document.getElementById('mida').style.backgroundColor = 'yellow';
+            document.getElementById('mida').style.backgroundColor = '#c1bb64';
             break;
             };
         break;
@@ -311,13 +311,13 @@ function colorAnswers() {
       case 4:
         switch (givenAnswers[4]) {
           case "true":
-            document.getElementById("midb").style.backgroundColor = 'green';
+            document.getElementById("midb").style.backgroundColor = '#64c1bb';
             break;
           case "false":
-            document.getElementById("midb").style.backgroundColor = 'red';
+            document.getElementById("midb").style.backgroundColor = '#c1646a';
             break;
           case "unknown":
-            document.getElementById('midb').style.backgroundColor = 'yellow';
+            document.getElementById('midb').style.backgroundColor = '#c1bb64';
             break;
             };
         break;
@@ -325,13 +325,13 @@ function colorAnswers() {
       case 5:
         switch (givenAnswers[5]) {
           case "true":
-            document.getElementById("midc").style.backgroundColor = 'green';
+            document.getElementById("midc").style.backgroundColor = '#64c1bb';
             break;
           case "false":
-            document.getElementById("midc").style.backgroundColor = 'red';
+            document.getElementById("midc").style.backgroundColor = '#c1646a';
             break;
           case "unknown":
-            document.getElementById('midc').style.backgroundColor = 'yellow';
+            document.getElementById('midc').style.backgroundColor = '#c1bb64';
             break;
             };
         break;
@@ -339,13 +339,13 @@ function colorAnswers() {
       case 6:
         switch (givenAnswers[6]) {
           case "true":
-            document.getElementById("inner").style.backgroundColor = 'green';
+            document.getElementById("inner").style.backgroundColor = '#51A39D';
             break;
           case "false":
-            document.getElementById("inner").style.backgroundColor = 'red';
+            document.getElementById("inner").style.backgroundColor = '#a35157';
             break;
           case "unknown":
-            document.getElementById('inner').style.backgroundColor = 'yellow';
+            document.getElementById('inner').style.backgroundColor = '#a39d51';
             break;
             };
         break;
