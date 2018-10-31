@@ -208,9 +208,8 @@ function attachListeners() {
   // });
   document.querySelector('#checkButton').addEventListener('click', testAnswers);
 }
+
 document.addEventListener("DOMContentLoaded", attachListeners);
-<<<<<<< HEAD
-=======
 
 
 function reload() {
@@ -330,7 +329,7 @@ function colorAnswers() {
     };
   };
 };
-console.log(HELLOOOOOO);
+
 
 
 // case "false":
@@ -339,4 +338,3 @@ console.log(HELLOOOOOO);
 // case "unknown":
 //   document.getElementById(BoxID).style.background = 'yellow';
 //   break;
->>>>>>> 690366ab34d7dd11aa3d100871f8edb8a087a3ff
