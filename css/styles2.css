@@ -94,6 +94,7 @@ body {
 
 
 #checkButton {
+  position:relative;
   background-color: #217196;
   border: none;
   color: white;
@@ -170,15 +171,15 @@ body {
 .inner {
   margin-left: -107px;
   margin-top: 190px;
-  background-color: palegreen;
+  background-color: #CDBB79;
   z-index: 20;
   position: static;
   pointer-events: auto;
 }
 
-.inner:hover {
+/* .inner:hover {
   background-color: green;
-}
+} */
 
 .mwrap {
   position: absolute;
@@ -224,12 +225,12 @@ body {
   margin-top: -204px;
 }
 .mid {
-  background-color: lightblue;
+  background-color: #B7695C;
   z-index: 15;
 }
-.mid:hover {
+/* .mid:hover {
   background-color: blue;
-}
+} */
 
 
 #outer1 {
@@ -248,14 +249,14 @@ body {
 .outer {
   width: 451px;
   height: 451px;
-  background-color: lightcoral;
+  background-color: #814374;
   z-index: 1;
   pointer-events: auto;
 }
 .outer2 {
   width: 448px;
   height: 448px;
-  background-color: lightcoral;
+  background-color: #814374;
   z-index: 1;
   pointer-events: auto;
 }
@@ -263,11 +264,11 @@ body {
 .outer3 {
   width: 458px;
   height: 458px;
-  background-color: lightcoral;
+  background-color: #814374;
   z-index: 1;
   pointer-events: auto;
 }
 
-.outer:hover {
+/* .outer:hover {
   background-color: red;
-}
+} */
