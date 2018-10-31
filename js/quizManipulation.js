@@ -100,17 +100,17 @@ function drop(ev) {
     }
 }
 
-function dragOut(event) {
-
-      // document.getElementById(regionID).addEventListener('ondragover', allowDrop);
-
-      if ( event.target.id == regionID ) {
-        // document.getElementById(regionID).addEventListener('drop', drop);
-        document.getElementById(regionID).drop = "drop(event)";
-        console.log('test')
-    }
-
-};
+// function dragOut(event) {
+//
+//       // document.getElementById(regionID).addEventListener('ondragover', allowDrop);
+//
+//       if ( event.target.id == regionID ) {
+//         // document.getElementById(regionID).addEventListener('drop', drop);
+//         document.getElementById(regionID).drop = "drop(event)";
+//         console.log('test')
+//     }
+//
+// };
 
 function testAnswers() {
 

@@ -7,7 +7,7 @@
   color: white;
   margin-left: -10px;
   margin-top: -8px;
-  width: 211px;
+  width: 221px;
   padding: 5px 5px;
   font-style: italic;
   font-size: 14px;
@@ -22,7 +22,7 @@
   color: white;
   border: 3px solid #F2F2F2;
   background-color: #06425C;
-  width: 200px;
+  width: 220px;
   height: 650px;
   align-content: center;
   overflow-y: auto;
@@ -91,10 +91,28 @@ body {
   border: 1px solid black;
 } */
 
+#restart {
+  position: absolute;
+  right: 30px;
+  bottom: 40px;
+  background-color: #217196;
+  border: none;
+  color: white;
+  margin-left: 10px;
+  width: 216px;
+  padding: 10px 10px;
+  font-size: 25px;
+  border: 2px solid #F2F2F2;
+}
 
+#restart:hover {
+  background-color: #51A39D;
+}
 
 #checkButton {
-  position:relative;
+  position: absolute;
+  right: 30px;
+  bottom: 100px;
   background-color: #217196;
   border: none;
   color: white;
@@ -134,7 +152,17 @@ body {
   position: absolute;
 }
 
+.correctAnswer {
 
+}
+
+.wrongAnswer {
+
+}
+
+.uknown {
+
+}
 
 .innerw {
   left: 475px;
@@ -268,6 +296,8 @@ body {
   z-index: 1;
   pointer-events: auto;
 }
+
+
 
 /* .outer:hover {
   background-color: red;
