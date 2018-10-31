@@ -312,6 +312,7 @@ function colorAnswers() {
     };
   };
 };
+console.log(HELLOOOOOO);
 
 
 // case "false":
