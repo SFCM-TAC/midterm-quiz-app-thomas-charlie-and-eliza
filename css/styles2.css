@@ -7,7 +7,7 @@
   color: white;
   margin-left: -10px;
   margin-top: -8px;
-  width: 231px;
+  width: 232px;
   padding: 5px 5px;
   font-style: italic;
   font-size: 14px;
@@ -68,13 +68,6 @@
   height: 612px; */
 }
 
-
-
-
-/* .box-selected {
-  border: 1px solid #51A39D;
-} */
-
 body {
   font-family: helvetica;
   font-size: 18px;
@@ -92,11 +85,12 @@ body {
 } */
 
 #restart {
+  z-index: 30;
+  outline: none;
   position: absolute;
   right: 30px;
   bottom: 40px;
   background-color: #217196;
-  border: none;
   color: white;
   margin-left: 10px;
   width: 216px;
@@ -110,11 +104,12 @@ body {
 }
 
 #checkButton {
+  outline: none;
+  z-index: 30;
   position: absolute;
   right: 30px;
   bottom: 100px;
   background-color: #217196;
-  border: none;
   color: white;
   margin-left: 10px;
   width: 216px;
@@ -127,35 +122,35 @@ body {
   background-color: #51A39D;
 }
 
-#secondanswerscolumn {
-  text-align: center;
-  background-color: lightgreen;
-  width: 20%;
-  align-content: center;
-  overflow-y: auto;
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid black;
+.resume {
+  outline: none;
+  z-index: 30;
+  background-color: #217196;
+  color: white;
+  margin-top: 5px;
+  width: 216px;
+  padding: 10px 10px;
+  font-size: 25px;
+  border: 2px solid #F2F2F2;
+}
 
-
-  /* display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; */
+.resume:hover {
+  background-color: #51A39D;
 }
 
 .response {
-  background-color: white;
+  z-index: 30;
+  /* border: 1px solid #F2F2F2; */
   text-align: center;
-  padding-top: 80px;
-  width: 300px;
-  height: 100px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  width: 250px;
+  height: 90px;
   position: absolute;
-  bottom: 0px;
-  right: 20px;
+  bottom: 97px;
+  right: 13px;
   z-index: 50;
-  border-color: white;
-  border-style: solid;
-  background-color: #217196;
+  background-color: 255, 255, 255, 0;
   font-size: 25px;
   color: white;
 }
@@ -166,6 +161,7 @@ body {
 
 #wrong {
   display: none;
+
 }
 
 .vd {
@@ -177,17 +173,6 @@ body {
   position: absolute;
 }
 
-.correctAnswer {
-
-}
-
-.wrongAnswer {
-
-}
-
-.uknown {
-
-}
 
 .innerw {
   left: 475px;
