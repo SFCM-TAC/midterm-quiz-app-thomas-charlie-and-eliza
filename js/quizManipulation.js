@@ -31,6 +31,7 @@ function drop(ev) {
     switch (RegionID) {
       case "outer1":
         outer1 = BoxID;
+        document.getElementById(BoxID).style.top = "100px";
         break;
       case "outer2":
         outer2 = BoxID;
