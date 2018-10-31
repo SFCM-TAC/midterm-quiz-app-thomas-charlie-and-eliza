@@ -105,7 +105,7 @@ if (event.target.id == "answers") {
         document.getElementById(boxID).style.left = "0px";
         document.getElementById(boxID).style.top = '0px';
         document.getElementById(boxID).style.transform = 'rotate(0deg)'
-        document.getElementById(boxID).style.margin = "10px 50px";
+        document.getElementById(boxID).style.margin = "10px 60px";
     }
   }
 }
