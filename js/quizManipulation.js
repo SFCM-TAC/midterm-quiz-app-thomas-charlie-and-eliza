@@ -40,7 +40,7 @@ function drop(ev) {
         document.getElementById(boxID).style.top = '150px';
         document.getElementById(boxID).style.transform = 'rotate(0deg)'
         document.getElementById(boxID).style.margin = "0px";
-        document.getElementById(regionID).ondrop = 'null';
+        document.getElementById(regionID).ondrop = 'null'; // this is whats breaking it
         break;
       case "outer2":
         outer2 = boxID;
