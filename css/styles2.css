@@ -7,12 +7,14 @@
   color: white;
   margin-left: -10px;
   margin-top: -8px;
-  width: 232px;
+  width: 240px;
   padding: 5px 5px;
   font-style: italic;
   font-size: 14px;
   text-align: center;
-  border: solid;
+  border-bottom: solid;
+  border-width: 3px;
+  border-length: 10px;
   border-color: white;
 }
 
@@ -22,7 +24,7 @@
   color: white;
   border: 3px solid #F2F2F2;
   background-color: #06425C;
-  width: 230px;
+  width: 235px;
   height: 650px;
   align-content: center;
   overflow-y: auto;
