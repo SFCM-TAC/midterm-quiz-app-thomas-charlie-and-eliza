@@ -353,7 +353,7 @@ function colorAnswers() {
     };
   };
 };
-
+console.log();
 
 
 // case "false":
